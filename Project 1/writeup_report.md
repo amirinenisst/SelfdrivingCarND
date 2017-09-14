@@ -23,7 +23,7 @@ It's nice to see the cool output. But when I observed deeply, my piece of code w
 algorithm can be further modified for robustness.
 one more thing that I figured is, this developed algorithm may not work for steep roads(up/down). 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Suggest possible improvements to current pipeline
 
 A possible improvement would be to figure out the horizontal road where the sky and the road meets and then implement the algorithm
 in case of steep roads
