@@ -55,7 +55,7 @@ This will generate a file `model-<epoch>.h5` whenever the performance in the epo
 
 The design of the network is based on [the NVIDIA model](https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/), which has been used by NVIDIA for the end-to-end self driving test.  As such, it is well suited for the project.  
 
-![alt text](C:\Users\teja\Desktop\Model architecture.png)
+![model architecture](https://user-images.githubusercontent.com/31676272/31158350-b78a26ca-a886-11e7-9cff-7251dd255b4d.PNG)
 
 
 ## References
