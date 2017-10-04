@@ -57,7 +57,7 @@ The design of the network is based on [the NVIDIA model](https://devblogs.nvidia
 
 <p align="center">
   <img src="C:\Users\teja\DesktopModel architecture\" width="350"/>
-
+</p>
 
 
 ## References
