@@ -38,4 +38,26 @@ The code for this step is contained in the second code cell of `P4.ipynb`.
 
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
-I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
+I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: ### Original Image
+
+![alt text][image1]
+
+### Undistorted Image
+
+![alt text][Image2]
+
+###Pipeline (single images)
+
+####1. Provide an example of a distortion-corrected image.
+
+#### Undistorted Image of the road
+
+I applied the same technique I used to undistort the chess board image to the road image like this:
+
+![alt text][image3]
+
+####2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
+I used a combination of color and gradient thresholds to generate a binary image. I tested with different combinations of color and gradient threshold and I finally came up with a combination of l channel in HLS color space and b channel in Lab color space.  Here's the procedure of how I came up with this combination.
+
+I tried with H channel in HLS to help me find the lines. I used a threshold channel of [17, 30]. In this channel H is able to detect the yellow line perfectly in all conditions. But It is associated with a large noise. The H channel image is as shown below.
+
